@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style2.css"/>
+</head>
+<body>
+    <h3>Students Data</h3>
+    <form method="GET" action="/students/new">
+        <button>Create new Student</button>
+    </form>
+   <% for(let student of Data){%>
+        <div class="data">
+            <p>Roll No: <%= student.roll_no%></p>
+            <p>Name: <%= student.name%></p>
+            <p>Email: <%= student.email%></p>
+            <p>CGPA: <%= student.cgpa%></p>
+            <form method="GET" action="/students/<%=student._id%>/showData">
+            <button>Show Details</button>
+             </form>
+            <form method="POST" action="/students/<%=student._id%>?_method=DELETE">
+            <button>Delete</button>
+            </form>
+        </div>
+    <%}%>
+
+</body>
+</html>

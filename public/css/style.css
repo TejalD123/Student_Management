@@ -1,0 +1,66 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.data{
+    border: 2px solid black;
+    padding:15px;
+    margin:5px;
+    display: inline-block;
+    border-radius: 7px;
+    background-color: rgba(179, 242, 194, 0.859);
+    font-weight:550;
+}
+/* Page background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Main card */
+.catlog {
+    background: #ffffff;
+    padding: 40px 60px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+#heading {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* Button */
+button {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
+}
+
+/* Button click */
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}

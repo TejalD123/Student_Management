@@ -1,0 +1,86 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page background */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+/* Container */
+.container {
+    text-align: center;
+    width: 400px;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 26px;
+}
+
+/* Card for student info */
+.card {
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Info paragraphs */
+.card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Edit button */
+.edit-btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Back button */
+.back-btn {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+/* Hover effect */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Active click effect */
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}

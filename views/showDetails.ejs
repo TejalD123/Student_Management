@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="/css/style5.css"/>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Details</h2>
+        <div class="card">
+            <p><strong>Roll No:</strong> <%= student.roll_no %></p>
+            <p><strong>Name:</strong> <%= student.name %></p>
+            <p><strong>Email:</strong> <%= student.email %></p>
+            <p><strong>CGPA:</strong> <%= student.cgpa %></p>
+        </div>
+
+        <div class="buttons">
+            <form method="GET" action="/students/<%=student._id%>/edit">
+                <button class="edit-btn">Edit</button>
+            </form>
+            <form method="GET" action="/students">
+                <button class="back-btn">Back</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

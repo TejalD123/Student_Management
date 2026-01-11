@@ -1,0 +1,64 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    padding: 40px;
+}
+
+/* Page heading */
+h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Create button section */
+form[action="/students/new"] {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Student card */
+.data {
+    background: #ffffff;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Card hover */
+.data:hover {
+    transform: translateY(-5px);
+}
+
+/* Student info */
+.data p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Buttons */
+button {
+    padding: 8px 18px;
+    margin-top: 10px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background: line
+}
