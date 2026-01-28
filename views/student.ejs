@@ -13,11 +13,11 @@
     </form>
    <% for(let student of Data){%>
         <div class="data">
-            <p>Roll No: <%= student.roll_no%></p>
+            <p>Roll No: <%= student.rollno%></p>
             <p>Name: <%= student.name%></p>
             <p>Email: <%= student.email%></p>
             <p>CGPA: <%= student.cgpa%></p>
-            <form method="GET" action="/students/<%=student._id%>/showData">
+            <form method="GET" action="/students/<%=student._id%>">
             <button>Show Details</button>
              </form>
             <form method="POST" action="/students/<%=student._id%>?_method=DELETE">

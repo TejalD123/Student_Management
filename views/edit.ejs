@@ -9,7 +9,7 @@
 <body>
    
     <form method="POST" action="/students/<%=student._id%>?_method=PUT">
-    <h2>Edit student data of roll no. :<%= student.roll_no%></h2>
+    <h2>Edit student data of roll no. :<%= student.rollno%></h2>
     <input type="text" name="name" placeholder="Enter name"  value="<%=student.name%>" required /><br/><br/>
     <input type="email" name="email" placeholder="Enter email" value="<%=student.email%>" required /><br/><br/>
     <input type="number" step="0.01" name="cgpa" placeholder="Enter CGPA"  value= "<%=student.cgpa%>" required /><br/><br/>
